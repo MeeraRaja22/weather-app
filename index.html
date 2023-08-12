@@ -11,7 +11,9 @@
 </head>
 <body>
     <div class="container">
+      <div class="weather-app-wrapper">
     <div class="weather-app">
+      <div class="overview">
  <h1>London</h1>
         <ul>
           <li>
@@ -20,12 +22,19 @@
           <li>
             Mostly Cloudy
           </li>
-        </ul>
+        </ul></div>
         <div class="row">
           <div class="col-6">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudy"
+            <div class="clearfix weather-temperature">
+            <img 
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
+            alt="Cloudy"
+            class="float-left"
             />
-            12°C | °F
+            <span>
+            <strong>12</strong><small class="units">°C | <a href="#">°F</a></small>
+            </span>
+        </div>
           </div> 
           <div class="col-6">
             <ul>
@@ -39,10 +48,9 @@
             </ul>
             </div>
           </div>
-        </div>
-        <small>
-          <a href="https://github.com/MeeraRaja22/weather-app" target="-blank">Open Source Code</a> by Meera Raja 
-        </small>
+          </div>
+        <small><a href="https://github.com/MeeraRaja22/weather-app/blob/main/src/index.html">Open Source Code</a> By Meera Raja</small>
+        
     </div>
     <script src="src/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
