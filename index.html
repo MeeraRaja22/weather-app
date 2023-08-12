@@ -6,6 +6,8 @@
   </head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
      <link rel="stylesheet" href="src/style.css" class="stylesheet">
      <title>Weather App</title>
 </head>
@@ -14,13 +16,13 @@
       <div class="weather-app-wrapper">
     <div class="weather-app">
       <div class="overview">
- <h1>London</h1>
+ <h1 id="city"></h1>
         <ul>
           <li>
             Friday 05:00
           </li>
-          <li>
-            Mostly Cloudy
+          <li id="description">
+            
           </li>
         </ul></div>
         <div class="row">
@@ -32,19 +34,16 @@
             class="float-left"
             />
             <span>
-            <strong>12</strong><small class="units">°C | <a href="#">°F</a></small>
+            <strong id="temperature"></strong><small class="units">°C | <a href="#">°F</a></small>
             </span>
         </div>
           </div> 
           <div class="col-6">
             <ul>
               <li>
-                Precipitation : 0%
+                Humidity: <span id=humidity></span>%
               </li>
-              <li>
-                Humidity: 73%
-              </li>
-              <li>Wind: 2km/h</li>
+              <li>Wind: <span id=wind></span>km/h</li>
             </ul>
             </div>
           </div>
